@@ -1,0 +1,5 @@
+(executable
+  (name poller)
+  (libraries rresult cohttp-lwt-unix yojson ppx_deriving_yojson.runtime)
+  (preprocess (pps ppx_deriving_yojson))
+  (flags (:standard "-w" "-39")))
